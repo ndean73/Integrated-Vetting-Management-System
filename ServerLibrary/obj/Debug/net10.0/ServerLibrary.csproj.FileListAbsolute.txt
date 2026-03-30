@@ -1,0 +1,5 @@
+C:\Users\USER\source\repos\Integrated-Vetting-Management-System\ServerLibrary\obj\Debug\net10.0\ServerLibrary.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Integrated-Vetting-Management-System\ServerLibrary\obj\Debug\net10.0\ServerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Integrated-Vetting-Management-System\ServerLibrary\obj\Debug\net10.0\ServerLibrary.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Integrated-Vetting-Management-System\ServerLibrary\obj\Debug\net10.0\ServerLibrary.AssemblyInfo.cs
+C:\Users\USER\source\repos\Integrated-Vetting-Management-System\ServerLibrary\obj\Debug\net10.0\ServerLibrary.csproj.CoreCompileInputs.cache
