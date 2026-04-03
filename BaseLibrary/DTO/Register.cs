@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace BaseLibrary.DTO
@@ -13,7 +14,7 @@ namespace BaseLibrary.DTO
 
         [Required]
         [DataType(DataType.Password)]
-        [Compare(nameof(Password))]
+        [Compare(nameof(ConfirmPassword))]
         public string? ConfirmPassword { get; set; }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BaseLibrary.Entities
 {
-    internal class ApplicationUser
+    public class ApplicationUser
     {
         public int userid { get; set; }
         public int name { get; set; }

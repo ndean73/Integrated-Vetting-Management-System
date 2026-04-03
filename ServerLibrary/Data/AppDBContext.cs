@@ -1,7 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BaseLibrary.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+
 namespace ServerLibrary.Data
 {
     public class AppDBContext(DbContextOptions<AppDBContext>options): DbContext(options)
