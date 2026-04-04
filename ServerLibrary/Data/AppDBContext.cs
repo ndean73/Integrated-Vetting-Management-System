@@ -16,5 +16,7 @@ namespace ServerLibrary.Data
         public DbSet<Village> t_Village { get; set; }
         public DbSet<Chiefdom> t_Chiefdom { get; set; }
         public DbSet<ApplicationUser> t_Applicationuser { get; set; }
+        public DbSet<SystemRole> t_SystemRoles { get; set; }
+        public DbSet<UserRole> t_UserRoles { get; set; }
     }
 }
