@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{278173EA-E007-FE0F-742B-1AC618509EC5}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\serverlibrary\\repository\\implementation\\useraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{278173EA-E007-FE0F-742B-1AC618509EC5}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repository\\implementation\\useraccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{278173EA-E007-FE0F-742B-1AC618509EC5}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\serverlibrary\\repository\\contract\\iuseraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{278173EA-E007-FE0F-742B-1AC618509EC5}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repository\\contract\\iuseraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\baselibrary\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\baselibrary\\responses\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\responses\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\baselibrary\\responses\\generalresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\responses\\generalresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{278173EA-E007-FE0F-742B-1AC618509EC5}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\serverlibrary\\helpers\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{278173EA-E007-FE0F-742B-1AC618509EC5}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\helpers\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{278173EA-E007-FE0F-742B-1AC618509EC5}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\serverlibrary\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,24 +27,36 @@
       "RelativeMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\entities\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\baselibrary\\dto\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dto\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{278173EA-E007-FE0F-742B-1AC618509EC5}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\serverlibrary\\repository\\contract\\iuseraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{278173EA-E007-FE0F-742B-1AC618509EC5}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repository\\contract\\iuseraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{278173EA-E007-FE0F-742B-1AC618509EC5}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\serverlibrary\\helpers\\jwtsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{278173EA-E007-FE0F-742B-1AC618509EC5}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\helpers\\jwtsection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\baselibrary\\responses\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\responses\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\baselibrary\\responses\\generalresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\responses\\generalresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\baselibrary\\entities\\systemrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\entities\\systemrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\baselibrary\\dto\\accountbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dto\\accountbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\baselibrary\\dto\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dto\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\baselibrary\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\baselibrary\\entities\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,14 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\baselibrary\\entities\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\entities\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3461765F-60A1-21BC-764E-FC799869FE2F}|Server\\Server.csproj|solutionrelative:server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{278173EA-E007-FE0F-742B-1AC618509EC5}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\serverlibrary\\serverlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{278173EA-E007-FE0F-742B-1AC618509EC5}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\serverlibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC894002-E089-358C-CEF0-930477310549}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\user\\source\\repos\\integrated-vetting-management-system\\baselibrary\\dto\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,50 +98,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Constants.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\ServerLibrary\\Helpers\\Constants.cs",
+              "RelativeDocumentMoniker": "ServerLibrary\\Helpers\\Constants.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\ServerLibrary\\Helpers\\Constants.cs",
+              "RelativeToolTip": "ServerLibrary\\Helpers\\Constants.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T19:50:06.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\Entities\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "BaseLibrary\\Entities\\ApplicationUser.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T18:12:42.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UserAccountRepository.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\ServerLibrary\\Repository\\Implementation\\UserAccountRepository.cs",
               "RelativeDocumentMoniker": "ServerLibrary\\Repository\\Implementation\\UserAccountRepository.cs",
               "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\ServerLibrary\\Repository\\Implementation\\UserAccountRepository.cs",
               "RelativeToolTip": "ServerLibrary\\Repository\\Implementation\\UserAccountRepository.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-04T03:12:49.894Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginResponse.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Responses\\LoginResponse.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\Responses\\LoginResponse.cs",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Responses\\LoginResponse.cs",
-              "RelativeToolTip": "BaseLibrary\\Responses\\LoginResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABBAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAmwBIAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-04T03:08:25.253Z",
+              "WhenOpened": "2026-03-30T20:29:26.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GeneralResponse.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Responses\\GeneralResponse.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\Responses\\GeneralResponse.cs",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Responses\\GeneralResponse.cs",
-              "RelativeToolTip": "BaseLibrary\\Responses\\GeneralResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\ServerLibrary\\Data\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "ServerLibrary\\Data\\AppDBContext.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\ServerLibrary\\Data\\AppDBContext.cs",
+              "RelativeToolTip": "ServerLibrary\\Data\\AppDBContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-04T03:04:58.498Z",
+              "WhenOpened": "2026-03-30T20:03:10.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "IUserAccount.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\ServerLibrary\\Repository\\Contract\\IUserAccount.cs",
               "RelativeDocumentMoniker": "ServerLibrary\\Repository\\Contract\\IUserAccount.cs",
@@ -150,33 +180,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Register.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\DTO\\Register.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\DTO\\Register.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\DTO\\Register.cs",
+              "RelativeToolTip": "BaseLibrary\\DTO\\Register.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T19:41:03.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
               "Title": "UserRole.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\UserRole.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\Entities\\UserRole.cs",
               "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\UserRole.cs",
               "RelativeToolTip": "BaseLibrary\\Entities\\UserRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-04T02:51:40.805Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SystemRole.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\SystemRole.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\Entities\\SystemRole.cs",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\SystemRole.cs",
-              "RelativeToolTip": "BaseLibrary\\Entities\\SystemRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "JwtSection.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\ServerLibrary\\Helpers\\JwtSection.cs",
+              "RelativeDocumentMoniker": "ServerLibrary\\Helpers\\JwtSection.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\ServerLibrary\\Helpers\\JwtSection.cs",
+              "RelativeToolTip": "ServerLibrary\\Helpers\\JwtSection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-04T02:50:12.86Z",
+              "WhenOpened": "2026-04-06T16:48:04.838Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\Server\\appsettings.json",
+              "RelativeDocumentMoniker": "Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\Server\\appsettings.json",
+              "RelativeToolTip": "Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwA4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-30T20:21:55.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "AccountBase.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\DTO\\AccountBase.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\DTO\\AccountBase.cs",
@@ -184,12 +240,48 @@
               "RelativeToolTip": "BaseLibrary\\DTO\\AccountBase.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAMwBAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T19:34:55.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T19:34:55.585Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "SystemRole.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\SystemRole.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\Entities\\SystemRole.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\SystemRole.cs",
+              "RelativeToolTip": "BaseLibrary\\Entities\\SystemRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T02:50:12.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Responses\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\Responses\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Responses\\LoginResponse.cs",
+              "RelativeToolTip": "BaseLibrary\\Responses\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T03:08:25.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GeneralResponse.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Responses\\GeneralResponse.cs",
+              "RelativeDocumentMoniker": "BaseLibrary\\Responses\\GeneralResponse.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Responses\\GeneralResponse.cs",
+              "RelativeToolTip": "BaseLibrary\\Responses\\GeneralResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-04T03:04:58.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Address.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\Address.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\Entities\\Address.cs",
@@ -201,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "District.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\District.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\Entities\\District.cs",
@@ -213,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Province.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\Province.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\Entities\\Province.cs",
@@ -225,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\Person.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\Entities\\Person.cs",
@@ -237,68 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\ServerLibrary\\Data\\AppDBContext.cs",
-              "RelativeDocumentMoniker": "ServerLibrary\\Data\\AppDBContext.cs",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\ServerLibrary\\Data\\AppDBContext.cs",
-              "RelativeToolTip": "ServerLibrary\\Data\\AppDBContext.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABMAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T20:03:10.941Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Register.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\DTO\\Register.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\DTO\\Register.cs",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\DTO\\Register.cs",
-              "RelativeToolTip": "BaseLibrary\\DTO\\Register.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T19:41:03.349Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\Entities\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\ApplicationUser.cs",
-              "RelativeToolTip": "BaseLibrary\\Entities\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T19:23:02.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\Server\\Program.cs",
-              "RelativeDocumentMoniker": "Server\\Program.cs",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\Server\\Program.cs",
-              "RelativeToolTip": "Server\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T20:29:26.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\Server\\appsettings.json",
-              "RelativeDocumentMoniker": "Server\\appsettings.json",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\Server\\appsettings.json",
-              "RelativeToolTip": "Server\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-30T20:21:55.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\DTO\\Login.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\DTO\\Login.cs",
@@ -310,7 +341,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Chiefdom.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\Chiefdom.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\Entities\\Chiefdom.cs",
@@ -322,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Village.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\Village.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\Entities\\Village.cs",
@@ -334,19 +365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ServerLibrary.csproj",
-              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\ServerLibrary\\ServerLibrary.csproj",
-              "RelativeDocumentMoniker": "ServerLibrary\\ServerLibrary.csproj",
-              "ToolTip": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\ServerLibrary\\ServerLibrary.csproj",
-              "RelativeToolTip": "ServerLibrary\\ServerLibrary.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-26T12:09:35.6Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "BaseEntity.cs",
               "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\Integrated-Vetting-Management-System\\BaseLibrary\\Entities\\BaseEntity.cs",
               "RelativeDocumentMoniker": "BaseLibrary\\Entities\\BaseEntity.cs",
