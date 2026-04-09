@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.Text;
 
@@ -7,6 +8,7 @@ namespace BaseLibrary.Entities
 {
     public class Person
     {
+        [Key]
         public string nationalid { get; set; }
         public string firstname { get; set; }
         public string middlename { get; set; }

@@ -1,0 +1,25 @@
+﻿using BaseLibrary.DTO;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using ServerLibrary.Repository.Contract;
+using static System.Collections.Specialized.BitVector32;
+
+namespace Server.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AuthenticationController(IUserAccount accountInterface) : ControllerBase
+    {
+
+        [HttpPost("register")]
+        public async Task<IActionResult> CreateAsync(Register user)
+        {
+
+            if (user == null) return BadRequest("Model is empty");
+            var result = await accountInterface.CreateAsync(user);
+            return Ok(result);
+
+        }
+
+    }
+}

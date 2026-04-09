@@ -33,7 +33,7 @@ namespace ServerLibrary.Repository.Implementation
             }
            );
 
-            var checkAdminRole = await appDBContext.t_SystemRoles.FirstOrDefaultAsync(_ => _.name!.Equals(Constants.Admin));
+            var checkAdminRole = await appDBContext.SystemRoles.FirstOrDefaultAsync(_ => _.name!.Equals(Constants.Admin));
 
             if (checkAdminRole is null)
             {
@@ -43,7 +43,7 @@ namespace ServerLibrary.Repository.Implementation
 
             }
 
-            var checkUserRole = await appDBContext.t_SystemRoles.FirstOrDefaultAsync(_ => _.name!.Equals(Constants.User));
+            var checkUserRole = await appDBContext.SystemRoles.FirstOrDefaultAsync(_ => _.name!.Equals(Constants.User));
             SystemRole response = new();
 
             if (checkUserRole is null)
@@ -64,7 +64,7 @@ namespace ServerLibrary.Repository.Implementation
         }
 
         private async Task<ApplicationUser> FindUserUserByEmail(string Email) =>
-            await appDBContext.t_Applicationuser.FirstOrDefaultAsync(_=>_.email!.ToLower()!.Equals(Email!.ToLower()));
+            await appDBContext.Applicationusers.FirstOrDefaultAsync(_=>_.email!.ToLower()!.Equals(Email!.ToLower()));
 
         private async Task<T> AddToDb<T>(T model)
         {

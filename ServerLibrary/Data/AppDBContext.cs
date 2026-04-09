@@ -6,17 +6,20 @@ using System.Text;
 
 namespace ServerLibrary.Data
 {
-    public class AppDBContext(DbContextOptions<AppDBContext>options): DbContext(options)
-    {
-        public DbSet<Person> t_Person { get; set; }
-        public DbSet<Company> t_Company { get; set; }
-        public DbSet<Address> t_Address { get; set; }
-        public DbSet<Province> t_Province { get; set; }
-        public DbSet<District> t_District{ get; set; }
-        public DbSet<Village> t_Village { get; set; }
-        public DbSet<Chiefdom> t_Chiefdom { get; set; }
-        public DbSet<ApplicationUser> t_Applicationuser { get; set; }
-        public DbSet<SystemRole> t_SystemRoles { get; set; }
-        public DbSet<UserRole> t_UserRoles { get; set; }
+    public class AppDBContext: DbContext
+      {
+        public AppDBContext() { }
+        public AppDBContext(DbContextOptions<AppDBContext> options)
+        : base(options) { }
+        public DbSet<Person> Persons { get; set; }
+        public DbSet<Company> Companies{ get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<Province> Provinces { get; set; }
+        public DbSet<District> Districts{ get; set; }
+        public DbSet<Village> Villages { get; set; }
+        public DbSet<Chiefdom> Chiefdoms { get; set; }
+        public DbSet<ApplicationUser> Applicationusers { get; set; }
+        public DbSet<SystemRole> SystemRoles { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
     }
 }
