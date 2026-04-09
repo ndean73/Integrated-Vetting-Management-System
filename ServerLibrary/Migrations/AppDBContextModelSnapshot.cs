@@ -108,24 +108,6 @@ namespace ServerLibrary.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("AddressId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ChiefdomId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("CompanyId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("DistrictId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ProvinceId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("VillageId")
-                        .HasColumnType("int");
-
                     b.Property<string>("companyname")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -134,18 +116,6 @@ namespace ServerLibrary.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AddressId");
-
-                    b.HasIndex("ChiefdomId");
-
-                    b.HasIndex("CompanyId");
-
-                    b.HasIndex("DistrictId");
-
-                    b.HasIndex("ProvinceId");
-
-                    b.HasIndex("VillageId");
 
                     b.ToTable("Companies");
                 });
@@ -304,33 +274,6 @@ namespace ServerLibrary.Migrations
                     b.ToTable("Villages");
                 });
 
-            modelBuilder.Entity("BaseLibrary.Entities.Company", b =>
-                {
-                    b.HasOne("BaseLibrary.Entities.Address", null)
-                        .WithMany("company")
-                        .HasForeignKey("AddressId");
-
-                    b.HasOne("BaseLibrary.Entities.Chiefdom", null)
-                        .WithMany("company")
-                        .HasForeignKey("ChiefdomId");
-
-                    b.HasOne("BaseLibrary.Entities.Company", null)
-                        .WithMany("company")
-                        .HasForeignKey("CompanyId");
-
-                    b.HasOne("BaseLibrary.Entities.District", null)
-                        .WithMany("company")
-                        .HasForeignKey("DistrictId");
-
-                    b.HasOne("BaseLibrary.Entities.Province", null)
-                        .WithMany("company")
-                        .HasForeignKey("ProvinceId");
-
-                    b.HasOne("BaseLibrary.Entities.Village", null)
-                        .WithMany("company")
-                        .HasForeignKey("VillageId");
-                });
-
             modelBuilder.Entity("BaseLibrary.Entities.Person", b =>
                 {
                     b.HasOne("BaseLibrary.Entities.Company", null)
@@ -374,43 +317,31 @@ namespace ServerLibrary.Migrations
 
             modelBuilder.Entity("BaseLibrary.Entities.Address", b =>
                 {
-                    b.Navigation("company");
-
                     b.Navigation("person");
                 });
 
             modelBuilder.Entity("BaseLibrary.Entities.Chiefdom", b =>
                 {
-                    b.Navigation("company");
-
                     b.Navigation("person");
                 });
 
             modelBuilder.Entity("BaseLibrary.Entities.Company", b =>
                 {
-                    b.Navigation("company");
-
                     b.Navigation("person");
                 });
 
             modelBuilder.Entity("BaseLibrary.Entities.District", b =>
                 {
-                    b.Navigation("company");
-
                     b.Navigation("person");
                 });
 
             modelBuilder.Entity("BaseLibrary.Entities.Province", b =>
                 {
-                    b.Navigation("company");
-
                     b.Navigation("person");
                 });
 
             modelBuilder.Entity("BaseLibrary.Entities.Village", b =>
                 {
-                    b.Navigation("company");
-
                     b.Navigation("person");
                 });
 #pragma warning restore 612, 618

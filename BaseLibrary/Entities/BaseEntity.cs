@@ -14,6 +14,6 @@ namespace BaseLibrary.Entities
         public string? name { get; set; }
 
         public List<Person>? person { get; set; }
-        public List<Company>? company { get; set; }
+      //  public List<Company>? company { get; set; }
     }
 }
