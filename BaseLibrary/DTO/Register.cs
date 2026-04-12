@@ -9,8 +9,8 @@ namespace BaseLibrary.DTO
     {
         [Required]
         [MinLength(5)]
-        [MaxLength(5)]
-        public string? fullname { get; set; }
+        [MaxLength(50)]
+        public string? Fullname { get; set; }
 
         [Required]
         [DataType(DataType.Password)]

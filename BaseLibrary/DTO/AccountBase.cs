@@ -9,7 +9,7 @@ namespace BaseLibrary.DTO
     {
         [Required]
         [DataType(DataType.EmailAddress)]
-        [EmailAddress]
+        //[EmailAddress]
          public string? email { get; set; }
 
         [Required]

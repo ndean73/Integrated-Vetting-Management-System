@@ -1,14 +1,9 @@
 {
-  "openapi": "3.1.1",
+  "openapi": "3.0.4",
   "info": {
-    "title": "Server | v1",
-    "version": "1.0.0"
+    "title": "Server",
+    "version": "1.0"
   },
-  "servers": [
-    {
-      "url": "http://localhost:5050"
-    }
-  ],
   "paths": {
     "/api/Authentication/register": {
       "post": {
@@ -32,8 +27,38 @@
                 "$ref": "#/components/schemas/Register"
               }
             }
-          },
-          "required": true
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Authentication/login": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Login"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Login"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Login"
+              }
+            }
+          }
         },
         "responses": {
           "200": {
@@ -84,42 +109,57 @@
   },
   "components": {
     "schemas": {
-      "Register": {
+      "Login": {
         "required": [
-          "fullname",
-          "confirmPassword",
           "email",
           "password"
         ],
         "type": "object",
         "properties": {
-          "fullname": {
-            "maxLength": 5,
-            "minLength": 5,
-            "type": [
-              "null",
-              "string"
-            ]
-          },
-          "confirmPassword": {
-            "type": [
-              "null",
-              "string"
-            ]
-          },
           "email": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
           },
           "password": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "minLength": 1,
+            "type": "string",
+            "format": "password"
           }
-        }
+        },
+        "additionalProperties": false
+      },
+      "Register": {
+        "required": [
+          "confirmPassword",
+          "email",
+          "fullname",
+          "password"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string",
+            "format": "password"
+          },
+          "fullname": {
+            "maxLength": 50,
+            "minLength": 5,
+            "type": "string"
+          },
+          "confirmPassword": {
+            "minLength": 1,
+            "type": "string",
+            "format": "password"
+          }
+        },
+        "additionalProperties": false
       },
       "WeatherForecast": {
         "type": "object",
@@ -129,28 +169,20 @@
             "format": "date"
           },
           "temperatureC": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
+            "type": "integer",
             "format": "int32"
           },
           "temperatureF": {
-            "pattern": "^-?(?:0|[1-9]\\d*)$",
-            "type": [
-              "integer",
-              "string"
-            ],
-            "format": "int32"
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
           },
           "summary": {
-            "type": [
-              "null",
-              "string"
-            ]
+            "type": "string",
+            "nullable": true
           }
-        }
+        },
+        "additionalProperties": false
       }
     }
   },

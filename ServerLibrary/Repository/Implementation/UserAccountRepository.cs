@@ -3,12 +3,16 @@ using BaseLibrary.Entities;
 using BaseLibrary.Responses;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using ServerLibrary.Data;
 using ServerLibrary.Helpers;
 using ServerLibrary.Repository.Contract;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Reflection.Metadata;
+using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using Constant = ServerLibrary.Helpers.Constants;
 
@@ -20,13 +24,13 @@ namespace ServerLibrary.Repository.Implementation
         {
             if (user == null) return new GeneralResponse(false, "Model is empty");
 
-            var checkuser = await FindUserUserByEmail(user.email);
+            var checkuser = await FindUserByEmail(user.email);
 
             if (checkuser != null) return new GeneralResponse(false, "User already Registered");
 
             var applicationUser = await AddToDb(new ApplicationUser()
             {
-                name = user.fullname,
+                name = user.Fullname,
                 email = user.email,
                 password = BCrypt.Net.BCrypt.HashPassword(user.password)
 
@@ -58,12 +62,66 @@ namespace ServerLibrary.Repository.Implementation
             }
             return new GeneralResponse(true,"Account Created");
         }
-        public Task<LoginResponse> SignInAsync(Login user)
-        {
-            throw new NotImplementedException();
+        public async Task<LoginResponse> SignInAsync(Login user)
+         {
+           
+            if (user == null) return new LoginResponse(false, "Model is empty");
+
+            var appuser = await FindUserByEmail(user.email);
+
+            if (appuser is null) return new LoginResponse(false, "User Not Found");
+
+            var crptpass = BCrypt.Net.BCrypt.HashPassword(user.password);
+
+            if (!BCrypt.Net.BCrypt.Verify(user.password, appuser.password))
+                  return new LoginResponse(false,"Email/Password not valid");
+
+
+            var getUserRole = await appDBContext.UserRoles.FirstOrDefaultAsync(_ => _.userid== appuser.userid);
+
+            if (getUserRole is null) return new LoginResponse(false, "User Role Not Found");
+
+            var getRoleName = await appDBContext.SystemRoles.FirstOrDefaultAsync(_ => _.id == getUserRole.roleid);
+
+            if (getRoleName is null) return new LoginResponse(false, "User Role Not Found");
+
+            string jwtToken = GenerateToken(appuser, getRoleName!.name!);
+            string refreshToken= GenerateRefreshToken();
+            return new LoginResponse(true, "Login Successfully", jwtToken,refreshToken);
+
+
+
         }
 
-        private async Task<ApplicationUser> FindUserUserByEmail(string Email) =>
+        private string GenerateToken(ApplicationUser user, string role) 
+        {
+
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.Value.Key));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+            var userClaims = new[]
+            {
+            new Claim(ClaimTypes.NameIdentifier, user.userid.ToString()),
+            new Claim(ClaimTypes.Name, user.name),
+            new Claim(ClaimTypes.Email, user.email),
+            new Claim(ClaimTypes.Role, role!),
+            };
+
+            var token = new JwtSecurityToken(
+            issuer: config.Value.Issuer,
+            audience: config.Value.Audience,
+            claims: userClaims,
+            expires:DateTime.Now.AddDays(1),
+            signingCredentials: credentials
+            );
+            return new JwtSecurityTokenHandler().WriteToken(token);
+
+        }
+
+        private static string GenerateRefreshToken() => Convert.ToBase64String(RandomNumberGenerator.GetBytes(64));
+        
+        
+
+        private async Task<ApplicationUser> FindUserByEmail(string Email) =>
             await appDBContext.Applicationusers.FirstOrDefaultAsync(_=>_.email!.ToLower()!.Equals(Email!.ToLower()));
 
         private async Task<T> AddToDb<T>(T model)
