@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
 using ServerLibrary.Data;
 using ServerLibrary.Helpers;
@@ -32,7 +34,16 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.Configure<JwtSection>(builder.Configuration.GetSection("JwtSection"));
 builder.Services.AddScoped<IUserAccount, UserAccountRepository>();
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowBlazorWasm",
+    builder => builder
+    .WithOrigins("https://localhost:7084","http://localhost:5226")
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .AllowCredentials());
+}
+);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -52,6 +63,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowBlazorWasm");
 
 app.UseAuthorization();
 
