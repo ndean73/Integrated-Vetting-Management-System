@@ -1,6 +1,41 @@
-﻿<Router AppAssembly="@typeof(App).Assembly" NotFoundPage="typeof(Pages.NotFound)">
+﻿@using Microsoft.AspNetCore.Components.Authorization
+
+<CascadingAuthenticationState>
+    <Router AppAssembly="@typeof(App).Assembly" NotFoundPage="typeof(Pages.NotFound)">
+        <Found Context="routeData">
+            <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+            <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+        </Found>
+
+        <!-- If you prefer inline NotFound content, remove NotFoundPage above and use this block -->
+        <!--
+        <NotFound>
+            <PageTitle>Not Found</PageTitle>
+            <LayoutView Layout="@typeof(MainLayout)">
+                <p role="alert">Sorry, there's nothing at this address.</p>
+            </LayoutView>
+        </NotFound>
+        -->
+    </Router>
+</CascadingAuthenticationState>
+
+
+
+@* @using Microsoft.AspNetCore.Components.Authorization
+<CascadingAuthenticationState>
+<Router AppAssembly="@typeof(App).Assembly" NotFoundPage="typeof(Pages.NotFound)">
     <Found Context="routeData">
-        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)"/>
+        <AuthorizeView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)"/>
+        
+        <AuthorizeView/>
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
     </Found>
+    <NotFound>
+    <PageTitle>Not Found</PageTitle>
+    <LayoutView Layout="@typeof(MainLayout)">
+    <p role="alert"> Sorry, there's nothing at this address.</p>
+    </LayoutView>
+    </NotFound> 
+
 </Router>
+        </CascadingAuthenticationState> *@
