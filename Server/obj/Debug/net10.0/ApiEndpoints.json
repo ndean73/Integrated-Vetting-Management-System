@@ -48,6 +48,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Server.Controllers.AuthenticationController",
+    "Method": "GetUsersAsync",
+    "RelativePath": "api/Authentication/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Server.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

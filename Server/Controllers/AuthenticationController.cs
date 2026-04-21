@@ -40,5 +40,12 @@ namespace Server.Controllers
             return Ok(result);
         }
 
+        [HttpGet("users")]
+        public async Task<IActionResult>GetUsersAsync()
+        {
+            var result = await accountInterface.GetUsersAsync();
+            return Ok(result);
+        }
+
     }
 }

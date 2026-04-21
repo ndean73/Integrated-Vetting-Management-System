@@ -1,10 +1,14 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using ServerLibrary.Data;
 using ServerLibrary.Helpers;
 using ServerLibrary.Repository.Contract;
 using ServerLibrary.Repository.Implementation;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +26,8 @@ builder.Services.AddOpenApi();
 // Add Swagger generator if using custom Swashbuckle filters or legacy features
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.Configure<JwtSection>(builder.Configuration.GetSection("JwtSection"));
+var jwtSection = builder.Configuration.GetSection(nameof(JwtSection)).Get<JwtSection>();
 //builder.Services.AddDbContext<AppDBContext>(options =>
 //{
 //    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Invalid Operation"));
@@ -32,7 +38,26 @@ builder.Services.AddSwaggerGen();
 //builder.Services.AddDbContext<AppDBContext>(options =>
 //    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.Configure<JwtSection>(builder.Configuration.GetSection("JwtSection"));
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true, // validate the server that issued the token
+        ValidateAudience = true, // validate the recipient of the token
+        ValidateLifetime = true, // validate token expiration
+        ValidateIssuerSigningKey = true, // validate signature
+
+        ValidIssuer = jwtSection!.Issuer,//builder.Configuration["Jwt:Issuer"],       // e.g. "https://yourdomain.com"
+        ValidAudience = jwtSection.Audience,// builder.Configuration["Jwt:Audience"],   // e.g. "https://yourdomain.com"
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSection.Key)) // secret key
+    };
+});
+
+
 builder.Services.AddScoped<IUserAccount, UserAccountRepository>();
 builder.Services.AddCors(options =>
 {
@@ -66,6 +91,7 @@ app.UseHttpsRedirection();
 
 app.UseCors("AllowBlazorWasm");
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

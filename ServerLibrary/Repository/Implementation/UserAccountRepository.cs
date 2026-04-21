@@ -174,6 +174,11 @@ namespace ServerLibrary.Repository.Implementation
             return new LoginResponse(true, "Token refreshed successfully", jwtToken, refreshToken);
         }
 
+        public async Task<List<ApplicationUser>> GetUsersAsync()
+        {
+            return await appDBContext.Applicationusers.ToListAsync();
+        }
+
     }
 
 }

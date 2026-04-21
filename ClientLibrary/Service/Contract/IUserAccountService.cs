@@ -1,4 +1,5 @@
 ﻿using BaseLibrary.DTO;
+using BaseLibrary.Entities;
 using BaseLibrary.Responses;
 
 namespace ClientLibrary.Service.Contract
@@ -8,5 +9,7 @@ namespace ClientLibrary.Service.Contract
         Task<GeneralResponse> CreateAsync(Register user);
         Task<LoginResponse> SignInAsync(Login user);
         Task<LoginResponse> RefreshTokenAsync(RefreshToken user);
+
+        Task<List<ApplicationUser>> GetUsersAsync();
     }
 }

@@ -1,6 +1,7 @@
 ﻿
 
 using BaseLibrary.DTO;
+using BaseLibrary.Entities;
 using BaseLibrary.Responses;
 using ClientLibrary.Helpers;
 using ClientLibrary.Service.Contract;
@@ -21,6 +22,13 @@ namespace ClientLibrary.Service.Implementation
             if (!result.IsSuccessStatusCode) return new GeneralResponse(false, "Error occured");
             return await result.Content.ReadFromJsonAsync<GeneralResponse>();
 
+        }
+
+        public async Task<List<ApplicationUser>> GetUsersAsync()
+        {
+            var httpClient = getHttpClient.GetPublicHttpClient();
+            var result = await httpClient.GetFromJsonAsync<List<ApplicationUser>>($"{AuthUrl}/users");
+            return result;
         }
 
         public Task<LoginResponse> RefreshTokenAsync(RefreshToken user)
