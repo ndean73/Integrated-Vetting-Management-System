@@ -67,6 +67,25 @@
           }
         }
       },
+      "Blazor.Storage/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Blazor.Storage.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Blazor.Storage.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Blazor.Storage.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazor.Storage.props": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1201,12 +1220,28 @@
           "bin/placeholder/BaseLibrary.dll": {}
         }
       },
+      "ClientLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BaseLibrary": "1.0.0",
+          "Blazor.Storage": "5.0.0",
+          "System.IdentityModel.Tokens.Jwt": "8.17.0"
+        },
+        "compile": {
+          "bin/placeholder/ClientLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClientLibrary.dll": {}
+        }
+      },
       "ServerLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "BCrypt.Net-Next": "4.1.0",
           "BaseLibrary": "1.0.0",
+          "ClientLibrary": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
           "Microsoft.EntityFrameworkCore": "10.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.5",
@@ -1314,6 +1349,27 @@
         "lib/netstandard2.1/BCrypt.Net-Next.dll",
         "lib/netstandard2.1/BCrypt.Net-Next.xml",
         "readme.md"
+      ]
+    },
+    "Blazor.Storage/5.0.0": {
+      "sha512": "IjOU4sRnowb6tNr2Vosk7x5QXoGU7Cdf26TnHiQ56WnSznVumtHvhWvtsKbk+sfUF3DrKpYXf/YkR867IlkoWg==",
+      "type": "package",
+      "path": "blazor.storage/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "blazor.storage.5.0.0.nupkg.sha512",
+        "blazor.storage.nuspec",
+        "build/Blazor.Storage.props",
+        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Blazor.Storage.props",
+        "buildTransitive/Blazor.Storage.props",
+        "icon.png",
+        "lib/net10.0/Blazor.Storage.dll",
+        "lib/net10.0/Blazor.Storage.xml",
+        "staticwebassets/Blazored.LocalStorage.js"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -3724,6 +3780,11 @@
       "type": "project",
       "path": "../BaseLibrary/BaseLibrary.csproj",
       "msbuildProject": "../BaseLibrary/BaseLibrary.csproj"
+    },
+    "ClientLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ClientLibrary/ClientLibrary.csproj",
+      "msbuildProject": "../ClientLibrary/ClientLibrary.csproj"
     },
     "ServerLibrary/1.0.0": {
       "type": "project",

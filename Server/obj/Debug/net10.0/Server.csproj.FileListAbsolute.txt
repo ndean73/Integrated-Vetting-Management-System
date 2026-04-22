@@ -168,3 +168,8 @@ C:\Users\USER\source\repos\Integrated-Vetting-Management-System\Server\obj\Debug
 C:\Users\USER\source\repos\Integrated-Vetting-Management-System\Server\obj\Debug\net10.0\Server.pdb
 C:\Users\USER\source\repos\Integrated-Vetting-Management-System\Server\obj\Debug\net10.0\Server.genruntimeconfig.cache
 C:\Users\USER\source\repos\Integrated-Vetting-Management-System\Server\obj\Debug\net10.0\ref\Server.dll
+C:\Users\USER\source\repos\Integrated-Vetting-Management-System\Server\bin\Debug\net10.0\Server.staticwebassets.runtime.json
+C:\Users\USER\source\repos\Integrated-Vetting-Management-System\Server\bin\Debug\net10.0\Blazor.Storage.dll
+C:\Users\USER\source\repos\Integrated-Vetting-Management-System\Server\bin\Debug\net10.0\ClientLibrary.dll
+C:\Users\USER\source\repos\Integrated-Vetting-Management-System\Server\bin\Debug\net10.0\ClientLibrary.pdb
+C:\Users\USER\source\repos\Integrated-Vetting-Management-System\Server\obj\Debug\net10.0\compressed\12x8ovv9tc-{0}-4ooi3bhemj-4ooi3bhemj.gz

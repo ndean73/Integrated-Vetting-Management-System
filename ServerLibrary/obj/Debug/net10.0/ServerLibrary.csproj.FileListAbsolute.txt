@@ -16,3 +16,5 @@ C:\Users\USER\source\repos\Integrated-Vetting-Management-System\ServerLibrary\ob
 C:\Users\USER\source\repos\Integrated-Vetting-Management-System\ServerLibrary\obj\Debug\net10.0\ServerLibrary.pdb
 C:\Users\USER\source\repos\Integrated-Vetting-Management-System\ServerLibrary\obj\Debug\net10.0\ServerLibrary.genruntimeconfig.cache
 C:\Users\USER\source\repos\Integrated-Vetting-Management-System\ServerLibrary\obj\Debug\net10.0\ref\ServerLibrary.dll
+C:\Users\USER\source\repos\Integrated-Vetting-Management-System\ServerLibrary\bin\Debug\net10.0\ClientLibrary.dll
+C:\Users\USER\source\repos\Integrated-Vetting-Management-System\ServerLibrary\bin\Debug\net10.0\ClientLibrary.pdb
