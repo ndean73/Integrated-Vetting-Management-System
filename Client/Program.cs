@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
+builder.Services.AddTransient<UserAccountService>();
 builder.Services.AddTransient<CustomHttpHandler>();
 builder.Services.AddHttpClient("SystemApiClient", client =>
 {
